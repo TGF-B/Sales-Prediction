@@ -30,7 +30,7 @@ print(correlation["Sales"].sort_values(ascending=False))
 >     Name: Sales, dtype: float64
 显然，三种渠道的回报率从高到低排列，**表现最好的是电视广告。**
 这种相关性我们也可以通过散点图的分布离散度来判断。
-## 画图
+## 绘制散点图
 ```python
 import plotly.express as px
 import plotly.graph_objects as go
@@ -74,7 +74,7 @@ data.describe()
 从上表可以看出季度电视，电台和报纸广告投放费用的总和，平均值以及标准值。
 我们取三者平均加和作为今年广告投放预算，再根据三者与销量的相关性强度将广告预算重新分配一下。
 
-- 绘制变量关系表：
+- 绘制变量关系表：    
 |     |  TV  |  Radio | Newspaper |
 |-----|------|--------|-----------|
 |mean|147.04 |  23.26 | 30.55     |
@@ -82,13 +82,13 @@ data.describe()
 |weight|0.637|  0.248 | 0.112     |
 |budget|127.94| 49.81 | 22.50     |
 
-- 应用预测模型
+- 应用预测模型    
 我们将求得的预算分配带入模型中：
 ```python
 features=np.array([[127.94,49.81,22.50]])
 print(model.predict(features))
 ```
-返回销售额：
+得到销售额：
 >       [16.81370557]
 
 ## 结论： 
