@@ -39,9 +39,8 @@ figure = px.scatter(data_frame = data, x="Sales",
 figure.show()
 ```
 依次更换y和size的变量名称，得到三张图：
-电视：   
-电台：   
-报纸：   
+
+！[散点图](https://github.com/TGF-B/Sales-Prediction/edit/main/pics sum.png)
 
 从图中我们可以发现，虽然不同渠道的广告投放回报有差别，但是都与销售额呈现正向关系。   
 考虑到我们要预测的销售额也是一个连续变量，所以我们尝试**用线性回归的方式来构建模型**。
