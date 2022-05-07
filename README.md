@@ -5,7 +5,7 @@
 ```python
 import pandas as pd
 import numpy as np
-data = pd.read_csv("https://raw.githubusercontent.com/amankharwal/Website-data/master/advertising.csv")
+data = pd.read_csv("https://github.com/TGF-B/Sales-Prediction/blob/main/pics%20sum.PNG")
 data.head()
 ```
 >         TV  Radio  Newspaper  Sales    
