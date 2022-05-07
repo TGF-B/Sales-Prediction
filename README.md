@@ -40,7 +40,7 @@ figure.show()
 ```
 依次更换y和size的变量名称，得到三张图：
 
-！[散点图](https://github.com/TGF-B/Sales-Prediction/blob/main/pics%20sum.PNG)
+![散点图](https://github.com/TGF-B/Sales-Prediction/blob/main/pics%20sum.PNG)
 
 从图中我们可以发现，虽然不同渠道的广告投放回报有差别，但是都与销售额呈现正向关系。   
 考虑到我们要预测的销售额也是一个连续变量，所以我们尝试**用线性回归的方式来构建模型**。
@@ -89,5 +89,6 @@ print(model.predict(features))
 返回销售额：
 >       [16.81370557]
 
-结论： 
+## 结论： 
 1. 电视，电台，报纸三种广告投放渠道中，电视广告的回报收益最大，达到了90.12%。
+2. 如果下季度广告预算为200，那么预计销售额可达到16。（单位不同）
