@@ -47,7 +47,7 @@ figure.show()
 ## 建模
 - 数据集的划分
 ```python
-x=np.array(data.drop(["Sales"],1))
+x=np.array(data[["TV","radio","newspaper"]])
 y=np.array(data["Sales"])
 xtrain,xtest,ytrain,ytest=train_test_split(x,y,
                                             test_size=0.2,
